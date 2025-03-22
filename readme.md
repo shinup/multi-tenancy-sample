@@ -64,11 +64,10 @@ To run a MongoDB instance locally using Docker, follow these steps:
 
 First, pull the latest MongoDB image:
 
-```sh
+```
 docker pull mongo
 docker run -d --name mongodb-container -p 27017:27017 mongo
-
-
+```
 
 ## API Endpoints
 
@@ -131,4 +130,7 @@ The MongoDB models include a `tenantId` field and compound indexes to ensure:
 - Tenant provisioning and onboarding workflow
 - Monitoring and analytics for tenant resource usage
 - Caching layer with tenant-specific cache segmentation
+
+```
+
 ```
