@@ -56,6 +56,20 @@ This demonstration uses the "Shared Database, Shared Schema" approach with tenan
    npm start
    ```
 
+## 🛠 Running MongoDB Locally with Docker
+
+To run a MongoDB instance locally using Docker, follow these steps:
+
+### **1️⃣ Pull the MongoDB Docker Image**
+
+First, pull the latest MongoDB image:
+
+```sh
+docker pull mongo
+docker run -d --name mongodb-container -p 27017:27017 mongo
+
+
+
 ## API Endpoints
 
 ### Tenant Management
@@ -117,3 +131,4 @@ The MongoDB models include a `tenantId` field and compound indexes to ensure:
 - Tenant provisioning and onboarding workflow
 - Monitoring and analytics for tenant resource usage
 - Caching layer with tenant-specific cache segmentation
+```
